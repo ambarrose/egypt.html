@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+
+  <style>
+  /* top block */
+    img {
+      padding-left: 60px;
+      padding-bottom: 20px;
+    }
+
+    hr {
+      border-color: #4f0366;
+    }
+    /* #theSquare {
+    height: 200px;
+    width: 200px;
+    background-color: yellow;
+    } */
+
+    .float-container {
+      max-width: 100%;
+      overflow:auto;
+    }
+    .float-child {
+      width: 48%;
+      float: left;
+      padding-left: 10px;
+    }
+    .right-side {
+      font-family: 'Fira Sans', sans-serif;
+      font-size: 24px;
+      color: #333;
+      line-height: 1.3;
+      padding-top: 90px;
+    }
+    h1 {
+      font-family: 'Noto Serif', serif;
+      text-transform: uppercase;
+      font-size: 50px;
+      color: #333;
+      padding-left: 60px;
+    }
+/* bottom block */
+    h2 {
+      font-family: 'Noto Serif', serif;
+      text-transform: capitalize;
+      font-size: 25px;
+      color: #333;
+      padding-left: 60px;
+    }
+
+    h3 {
+      font-family: 'Noto Serif', serif;
+      text-transform:lowercase;
+      font-style: italic;
+      font-size: 20px;
+      color: #333;
+      padding-left: 60px;
+    }
+
+    h4 {
+      font-family: 'Noto Serif', serif;
+      text-transform: capitalize;
+      font-style: bold;
+      font-weight: 100px;
+      font-size: 20px;
+      color: #333;
+      padding-left: 60px;
+    }
+
+    h5 {
+      font-family: 'Nanum Myeongjo', serif;
+      font-size: 20px;
+      color: rgb(86, 2, 144);
+      padding-left: 60px;
+    }
+
+    h6 {
+      font-family: 'Nanum Myeongjo', serif;
+      text-transform: uppercase;
+      font-size: 18px;
+      color: #333;
+      padding-left: 60px;
+    }
+
+    .text {
+      font-family: 'Nanum Myeongjo', serif;
+      font-size: 16px;
+      color: #333;
+      line-height: 1.3;
+      max-width: 50%;
+      padding-left: 60px;
+    }
+
+    .header-set {
+      width: 60%;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- the orange code or 'src' or 'id' etc are attributes -->
+  <!-- adjust the path -->
+
+  <div class="float-container">
+
+    <div class="float-child">
+      <div class="left-side">
+        <h1>Ancient Egyptians loved board games</h1>
+        <img src="img/ancient-egypt-games-landscape.png" alt=""></div>
+    </div>
+
+    <div class="float-child">
+      <div class="right-side">
+        <p>After a long day’s work along the Nile River, Egyptians often relaxed by playing board games. Several different games were played, including “Mehen” and “Dogs and Jackals,” but perhaps the most popular was a game of chance known as “Senet.” <br><br> This pastime dates back as far as 3500 B.C. and was played on a long board painted with 30 squares. Each player had a set of pieces that were moved along the board according to rolls of dice or the throwing sticks.<br><br> Historians still debate Senet’s exact rules, but there is little doubt of the game’s popularity. Paintings depict Queen Nefertari playing Senet, and pharaohs like Tutankhamen even had game boards buried with them in their tombs.</p>
+      </div>
+    </div>
+
+  </div>
+<!-- float-container ENDS -->
+<hr>
+
+  <div class="header-set">
+       <h1>main heading</h1>
+       <h2>blurb text</h2>
+       <h3>writter or authors names</h3>
+       <h4>main body text</h4>
+       <h5>"pulled quotes"</h5>
+
+    <div class="text">
+        <p>Body text <br> After a long day’s work along the Nile River, Egyptians often relaxed by playing board games. Several different games were played, including “Mehen” and “Dogs and Jackals,” but perhaps the most popular was a game of chance known as “Senet.” This pastime dates back as far as 3500 B.C. and was played on a long board painted with 30 squares. Each player had a set of pieces that were moved along the board according to rolls of dice or the throwing sticks. Historians still debate Senet’s exact rules, but there is little doubt of the game’s popularity. Paintings depict Queen Nefertari playing Senet, and pharaohs like Tutankhamen even had game boards buried with them in their tombs.</p>
+     </div>
+       <h6>reference text</h6>
+   </div>
+  <!-- header-set ENDS -->
+
+  <!-- <div id="theSquare" class="is-a-class"></div> -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!-- Internal Javascript -->
+<script>
+// This is some Javascript code doing an alert
+// alert ('Good morning...');
+// $ means we are using jQuery
+
+// setTimeout(function(){
+//   $('img').hide(2000);
+// }, 6000);
+// this can adjust wait time on functions
+
+
+$('.right-side').mouseover(function(){
+
+  // alert('working');
+  $('img').hide(2000);
+
+});
+
+
+
+</script>
+</body>
+</html>
